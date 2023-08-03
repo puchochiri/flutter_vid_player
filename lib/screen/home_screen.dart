@@ -23,7 +23,6 @@ class _HomeScreenState extends State<HomeScreen> {
       body: video== null ? renderEmpty() : renderVideo(),
     );
     // TODO: implement build
-    throw UnimplementedError();
   } //동영상 저장할 변수
 
 
@@ -74,6 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
       return Center(
         child: CustomVideoPlayer(
           video: video!, // 선택된 동영상 입력해주시
+          onNewVideoPressed: onNewVideoPressed,
         ),
       );
   }
@@ -100,7 +100,6 @@ class _Logo extends StatelessWidget { //로고를 보여줄 위젯
       ),
     );
     // TODO: implement build
-    throw UnimplementedError();
   }
 
 }
@@ -133,7 +132,6 @@ class _AppName extends StatelessWidget { // 앱 제목을 보여줄 위젯
       ],
     );
     // TODO: implement build
-    throw UnimplementedError();
   }
 
 
